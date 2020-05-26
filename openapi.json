@@ -181,8 +181,8 @@
                     {
                         "name": "invocation_mode",
                         "in": "query",
-                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
-                        "required": true,
+                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: (Default) Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
+                        "required": false,
                         "type": "string"
                     },
                     {
@@ -590,7 +590,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -697,7 +697,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -786,7 +786,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -877,14 +877,14 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "invocation_mode",
                         "in": "path",
-                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
+                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: (Default) Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
                         "required": true,
                         "type": "string"
                     },
@@ -990,7 +990,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1101,7 +1101,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1211,7 +1211,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1352,14 +1352,14 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "invocation_mode",
                         "in": "path",
-                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
+                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: (Default) Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
                         "required": true,
                         "type": "string"
                     },
@@ -1495,7 +1495,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1603,7 +1603,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1714,7 +1714,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1821,7 +1821,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1931,7 +1931,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -1945,7 +1945,7 @@
                     {
                         "name": "invocation_mode",
                         "in": "path",
-                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
+                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: (Default) Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
                         "required": true,
                         "type": "string"
                     },
@@ -2083,7 +2083,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -2212,7 +2212,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -2326,14 +2326,14 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "invocation_mode",
                         "in": "path",
-                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
+                        "description": "Specifies the processing mode to invoke this request process with. \n\n**Possible Values** \n- `sync`: API call is processed synchronously. The response is delivered when processing is complete, unless there's a timeout. \n- `async`: The async monitor response is immediately returned and request processing occurs asynchronously. The caller is responsible for polling that endpoint until completion. \n- `sync,async`: (Default) Synchronous processing of the request is attempted. When the processing extends past 5000ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.",
                         "required": true,
                         "type": "string"
                     },
@@ -2477,7 +2477,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -2608,7 +2608,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -2716,7 +2716,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -2890,7 +2890,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -3030,7 +3030,7 @@
                     {
                         "name": "libraryId",
                         "in": "path",
-                        "description": "The ID of the requested library. Valid library ID types include: \n- *[DEPRECATED]* Library ID (Storage GUID) \n- Asset URN (ex: urn:aaid:sc:US:1c2327c6-xa3a-8c74-11kc-h5owd13a7ec7) \n- Public Library ID (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
+                        "description": "The ID of the requested library. \nFor private libraries, the `library_urn` should be used. (ex: urn:aaid:sc:US:1c2327c6-ca3a-8f74-11ac-d5bca13a8fc7) \nFor public libraries, the public library `id` should be used. (ex: 1UTOX1PQ9YWOTFIPUEQUV0Z2XFTFFF)",
                         "required": true,
                         "type": "string"
                     },
@@ -4162,6 +4162,9 @@
                 "null": {
                     "type": "boolean"
                 },
+                "number": {
+                    "type": "boolean"
+                },
                 "float": {
                     "type": "boolean"
                 },
@@ -4179,13 +4182,13 @@
                         "STRING"
                     ]
                 },
-                "number": {
+                "int": {
                     "type": "boolean"
                 },
                 "binary": {
                     "type": "boolean"
                 },
-                "int": {
+                "short": {
                     "type": "boolean"
                 },
                 "valueNode": {
@@ -4207,9 +4210,6 @@
                     "type": "boolean"
                 },
                 "floatingPointNumber": {
-                    "type": "boolean"
-                },
-                "short": {
                     "type": "boolean"
                 },
                 "long": {
@@ -4658,10 +4658,6 @@
                 "reference": {
                     "type": "string"
                 },
-                "example": {
-                    "type": "object",
-                    "properties": {}
-                },
                 "title": {
                     "type": "string"
                 },
@@ -4674,6 +4670,10 @@
                 },
                 "externalDocs": {
                     "$ref": "#/definitions/ExternalDocs"
+                },
+                "example": {
+                    "type": "object",
+                    "properties": {}
                 }
             }
         },
@@ -4802,15 +4802,15 @@
                 "pattern": {
                     "type": "string"
                 },
-                "allowEmptyValue": {
-                    "type": "boolean"
-                },
                 "vendorExtensions": {
                     "type": "object",
                     "additionalProperties": {
                         "type": "object",
                         "properties": {}
                     }
+                },
+                "allowEmptyValue": {
+                    "type": "boolean"
                 }
             }
         },
@@ -4902,19 +4902,12 @@
                 "description": {
                     "type": "string"
                 },
-                "format": {
-                    "type": "string"
-                },
                 "position": {
                     "type": "integer",
                     "format": "int32"
                 },
-                "allowEmptyValue": {
-                    "type": "boolean"
-                },
-                "example": {
-                    "type": "object",
-                    "properties": {}
+                "format": {
+                    "type": "string"
                 },
                 "title": {
                     "type": "string"
@@ -4928,6 +4921,13 @@
                 },
                 "xml": {
                     "$ref": "#/definitions/Xml"
+                },
+                "example": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "allowEmptyValue": {
+                    "type": "boolean"
                 }
             }
         },
