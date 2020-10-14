@@ -73,7 +73,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -653,7 +653,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -1273,7 +1273,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `representations`: Flattened list of assets associated with the library element.",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `representations`: Flattened list of assets associated with the library element.",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -1702,7 +1702,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `representations`: Flattened list of assets associated with the library element.",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `representations`: Flattened list of assets associated with the library element.",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -2070,7 +2070,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -2416,7 +2416,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -2530,7 +2530,7 @@
                 "tags": [
                     "Library Service - Public"
                 ],
-                "summary": "Retrieve a specific library",
+                "summary": "Check the presence and fetch headers of a public library",
                 "description": "",
                 "operationId": "headPublicLibrary",
                 "produces": [
@@ -2696,7 +2696,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -2836,7 +2836,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `representations`: Flattened list of assets associated with the library element.",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `representations`: Flattened list of assets associated with the library element.",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -2996,7 +2996,7 @@
                     {
                         "name": "selector",
                         "in": "query",
-                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `full`: Include all of the selectors. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
+                        "description": "Customize which data sets to include in the response. \nAll applications using this API will need the same sets of data, but different applications will not require different depths of details. \nCallers can specify a comma-separated list of selectors to either limit or expand the default response. The absence of selectors will yield the default response, while including selectors gives callers access to building-blocks to compose the response to their needs. \n\n**Possible Values** \n- `default`: Base data, use this to build out custom response. \n- `details`: All available data for in-depth display. \n- `collaboration`: Add collaboration data to a lesser-scoped selector. \n- `groups`: Include group data in the response. \n- `rendition_grid`: Provides a set of links to library element image renditions, which can be combined to create a thumbnail for the library. The `main` rendition link is the first asset uploaded to the library, while the `tiles` contain the three most recently updated library elements' rendition links. \n",
                         "required": false,
                         "type": "string",
                         "default": "default"
@@ -3188,152 +3188,9 @@
                     }
                 }
             }
-        },
-        "/api/v1/user/index": {
-            "get": {
-                "tags": [
-                    "Library Service"
-                ],
-                "summary": "Get Index of Discoverable Assets",
-                "description": "",
-                "operationId": "getIndex",
-                "produces": [
-                    "application/json"
-                ],
-                "parameters": [
-                    {
-                        "name": "authorization",
-                        "in": "header",
-                        "description": "An access token issued by Adobe IMS. In the header, the access token must be preceded by `Bearer `.",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "x-api-key",
-                        "in": "header",
-                        "description": "The API key assigned to your API client account when you signed up.",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "x-request-id",
-                        "in": "header",
-                        "description": "A unique request identifier that you define. Used by Adobe Support to trace the request in logs. This header is automatically generated by the server and returned in the response if you do not set it explicitly.",
-                        "required": false,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/definitions/AcpIndexInfo"
-                        }
-                    },
-                    "400": {
-                        "description": "Bad Request: The request is invalid.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    },
-                    "401": {
-                        "description": "Unauthorized: Authorization Token is not accepted.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    },
-                    "403": {
-                        "description": "Forbidden: API Key is not accepted.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    },
-                    "404": {
-                        "description": "Not Found: The specified resource could not be found.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    },
-                    "406": {
-                        "description": "Not Acceptable: The requested format is not accepted for this method.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    },
-                    "500": {
-                        "description": "Internal Server Error: We had a problem with our server.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    },
-                    "503": {
-                        "description": "Service Unavailable: We are temporarily offline for maintenance, please try again later.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorResponse"
-                        }
-                    }
-                }
-            }
         }
     },
     "definitions": {
-        "AcpIndexInfo": {
-            "type": "object",
-            "properties": {
-                "organizations": {
-                    "type": "object",
-                    "description": "Map of Discoverable Repositories indexed by Org ID",
-                    "readOnly": true,
-                    "additionalProperties": {
-                        "$ref": "#/definitions/AcpRepositoryDTO"
-                    }
-                },
-                "_links": {
-                    "description": "List Links",
-                    "$ref": "#/definitions/MelvilleHypermediaListLinks"
-                }
-            }
-        },
-        "AcpRepositoryDTO": {
-            "type": "object",
-            "properties": {
-                "namespace": {
-                    "type": "string"
-                },
-                "repo:repositoryId": {
-                    "type": "string",
-                    "readOnly": true
-                },
-                "repo:owner": {
-                    "$ref": "#/definitions/RepoOwner"
-                },
-                "repo:availableRegions": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "metadata": {
-                    "description": "Repository Metadata",
-                    "$ref": "#/definitions/RepositoryMetadata"
-                },
-                "_embedded": {
-                    "type": "object",
-                    "description": "Embedded values",
-                    "additionalProperties": {
-                        "type": "object",
-                        "properties": {}
-                    }
-                },
-                "assets": {
-                    "type": "array",
-                    "description": "Asset collections within repository",
-                    "items": {
-                        "$ref": "#/definitions/DiscoveryAssetReference"
-                    }
-                }
-            }
-        },
         "AddClientTokenPayload": {
             "type": "object",
             "properties": {
@@ -3461,17 +3318,18 @@
         },
         "CreateLibraryPayload": {
             "type": "object",
-            "required": [
-                "name"
-            ],
             "properties": {
                 "name": {
                     "type": "string",
-                    "description": "Human-readable name for library"
+                    "description": "Human-readable name for library. *Required* for creating a new library (not for move/copy)"
                 },
                 "source": {
                     "type": "string",
-                    "description": "Required for copy, URN or public library ID of the source library."
+                    "description": "URN or public library ID of the source library. *Required* for copy."
+                },
+                "self": {
+                    "type": "string",
+                    "description": "URN or public library ID of the library to be moved. *Required* for move."
                 }
             }
         },
@@ -3521,6 +3379,9 @@
                     "type": "integer",
                     "format": "int64",
                     "description": "This parameter will be ignored, populated with the timestamp upon creation and immutable after"
+                },
+                "_fc": {
+                    "type": "boolean"
                 }
             }
         },
@@ -3574,16 +3435,28 @@
             "type": "object",
             "properties": {
                 "email": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "displayName": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "collaborator": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "role": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
+                },
+                "canComment": {
+                    "type": "boolean",
+                    "readOnly": true
+                },
+                "canShare": {
+                    "type": "boolean",
+                    "readOnly": true
                 }
             }
         },
@@ -3758,12 +3631,17 @@
                 "path": {
                     "type": "string"
                 },
+                "linkurl": {
+                    "type": "string"
+                },
+                "linktype": {
+                    "type": "string"
+                },
                 "is_full_size": {
                     "type": "boolean"
                 },
                 "is_external_link": {
-                    "type": "boolean",
-                    "readOnly": true
+                    "type": "boolean"
                 },
                 "width": {
                     "type": "integer",
@@ -3777,6 +3655,9 @@
                     "type": "integer",
                     "format": "int64"
                 },
+                "name": {
+                    "type": "string"
+                },
                 "asset_id": {
                     "type": "string"
                 },
@@ -3786,12 +3667,7 @@
                 "md5": {
                     "type": "string"
                 },
-                "linktype": {
-                    "type": "string",
-                    "readOnly": true
-                },
                 "_links": {
-                    "readOnly": true,
                     "$ref": "#/definitions/MelvilleHypermediaRepresentationLinks"
                 },
                 "etag": {
@@ -3853,6 +3729,14 @@
                     "type": "string",
                     "description": "Library name"
                 },
+                "document_id": {
+                    "type": "string",
+                    "description": "Document ID"
+                },
+                "document_type": {
+                    "type": "string",
+                    "description": "Document Type"
+                },
                 "creator": {
                     "type": "string",
                     "description": "Library creator"
@@ -3864,6 +3748,7 @@
                         "PRIVATE",
                         "INCOMING",
                         "OUTGOING",
+                        "DISCOVERY",
                         "PUBLIC"
                     ]
                 },
@@ -3905,7 +3790,7 @@
                     "format": "int32"
                 },
                 "bookmark": {
-                    "description": "Public or Shared Library Bookmark",
+                    "description": "Public or Shared Library Bookmark, not populated via the un-authenticated `/public/libraries` API.",
                     "$ref": "#/definitions/DbLibraryBookmark"
                 },
                 "rendition_grid": {
@@ -3920,15 +3805,6 @@
                     "description": "Asset ACL",
                     "$ref": "#/definitions/EffectiveACL"
                 },
-                "_links": {
-                    "$ref": "#/definitions/MelvilleHypermediaLibraryLinks"
-                },
-                "assetSubType": {
-                    "type": "string"
-                },
-                "_fc": {
-                    "type": "boolean"
-                },
                 "details": {
                     "description": "Library details",
                     "$ref": "#/definitions/DbLibraryDetail"
@@ -3938,6 +3814,15 @@
                     "items": {
                         "$ref": "#/definitions/DbLibraryGroup"
                     }
+                },
+                "_links": {
+                    "$ref": "#/definitions/MelvilleHypermediaLibraryLinks"
+                },
+                "assetSubType": {
+                    "type": "string"
+                },
+                "_fc": {
+                    "type": "boolean"
                 }
             }
         },
@@ -3945,19 +3830,32 @@
             "type": "object",
             "properties": {
                 "id": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "recipientEmail": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "senderName": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "created": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "role": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
+                },
+                "canComment": {
+                    "type": "boolean",
+                    "readOnly": true
+                },
+                "canShare": {
+                    "type": "boolean",
+                    "readOnly": true
                 }
             }
         },
@@ -3974,18 +3872,6 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/DbLibraryElementRenditionData"
-                    }
-                }
-            }
-        },
-        "DiscoveryAssetReference": {
-            "type": "object",
-            "properties": {
-                "_embedded": {
-                    "type": "object",
-                    "additionalProperties": {
-                        "type": "object",
-                        "properties": {}
                     }
                 }
             }
@@ -4083,13 +3969,10 @@
                 "null": {
                     "type": "boolean"
                 },
-                "number": {
-                    "type": "boolean"
-                },
-                "int": {
-                    "type": "boolean"
-                },
                 "short": {
+                    "type": "boolean"
+                },
+                "float": {
                     "type": "boolean"
                 },
                 "nodeType": {
@@ -4106,10 +3989,10 @@
                         "STRING"
                     ]
                 },
-                "float": {
+                "int": {
                     "type": "boolean"
                 },
-                "binary": {
+                "number": {
                     "type": "boolean"
                 },
                 "valueNode": {
@@ -4149,6 +4032,9 @@
                     "type": "boolean"
                 },
                 "boolean": {
+                    "type": "boolean"
+                },
+                "binary": {
                     "type": "boolean"
                 }
             }
@@ -4567,18 +4453,27 @@
         "Model": {
             "type": "object",
             "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "reference": {
+                    "type": "string"
+                },
                 "properties": {
                     "type": "object",
                     "additionalProperties": {
                         "$ref": "#/definitions/Property"
                     }
                 },
-                "description": {
-                    "type": "string"
-                },
                 "example": {
                     "type": "object",
                     "properties": {}
+                },
+                "title": {
+                    "type": "string"
+                },
+                "externalDocs": {
+                    "$ref": "#/definitions/ExternalDocs"
                 },
                 "vendorExtensions": {
                     "type": "object",
@@ -4586,15 +4481,6 @@
                         "type": "object",
                         "properties": {}
                     }
-                },
-                "title": {
-                    "type": "string"
-                },
-                "reference": {
-                    "type": "string"
-                },
-                "externalDocs": {
-                    "$ref": "#/definitions/ExternalDocs"
                 }
             }
         },
@@ -4705,6 +4591,12 @@
         "Parameter": {
             "type": "object",
             "properties": {
+                "required": {
+                    "type": "boolean"
+                },
+                "description": {
+                    "type": "string"
+                },
                 "name": {
                     "type": "string"
                 },
@@ -4712,12 +4604,6 @@
                     "type": "string"
                 },
                 "readOnly": {
-                    "type": "boolean"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "required": {
                     "type": "boolean"
                 },
                 "pattern": {
@@ -4815,14 +4701,21 @@
         "Property": {
             "type": "object",
             "properties": {
+                "description": {
+                    "type": "string"
+                },
                 "readOnly": {
                     "type": "boolean"
                 },
                 "type": {
                     "type": "string"
                 },
-                "description": {
+                "format": {
                     "type": "string"
+                },
+                "position": {
+                    "type": "integer",
+                    "format": "int32"
                 },
                 "xml": {
                     "$ref": "#/definitions/Xml"
@@ -4831,12 +4724,11 @@
                     "type": "object",
                     "properties": {}
                 },
+                "title": {
+                    "type": "string"
+                },
                 "allowEmptyValue": {
                     "type": "boolean"
-                },
-                "position": {
-                    "type": "integer",
-                    "format": "int32"
                 },
                 "vendorExtensions": {
                     "type": "object",
@@ -4844,94 +4736,6 @@
                         "type": "object",
                         "properties": {}
                     }
-                },
-                "title": {
-                    "type": "string"
-                },
-                "format": {
-                    "type": "string"
-                }
-            }
-        },
-        "RepoOwner": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string"
-                },
-                "type": {
-                    "type": "string"
-                }
-            }
-        },
-        "RepositoryMetadata": {
-            "type": "object",
-            "properties": {
-                "namespace": {
-                    "type": "string"
-                },
-                "_links": {
-                    "type": "object",
-                    "additionalProperties": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "#/definitions/Link"
-                        }
-                    }
-                },
-                "dc:format": {
-                    "type": "string"
-                },
-                "repo:etag": {
-                    "type": "string"
-                },
-                "repo:repositoryId": {
-                    "type": "string"
-                },
-                "repo:id": {
-                    "type": "string"
-                },
-                "repo:assetId": {
-                    "type": "string"
-                },
-                "repo:name": {
-                    "type": "string"
-                },
-                "repo:path": {
-                    "type": "string"
-                },
-                "repo:homeFor": {
-                    "type": "string"
-                },
-                "repo:createDate": {
-                    "type": "string"
-                },
-                "repo:createdBy": {
-                    "type": "string"
-                },
-                "repo:modifyDate": {
-                    "type": "string"
-                },
-                "repo:modifiedBy": {
-                    "type": "string"
-                },
-                "repo:version": {
-                    "type": "string"
-                },
-                "repo:size": {
-                    "type": "integer",
-                    "format": "int32"
-                },
-                "tiff:imageWidth": {
-                    "type": "integer",
-                    "format": "int32"
-                },
-                "tiff:imageHeight": {
-                    "type": "integer",
-                    "format": "int32"
-                },
-                "repo:state": {
-                    "type": "string"
                 }
             }
         },
@@ -4973,10 +4777,10 @@
         "SecuritySchemeDefinition": {
             "type": "object",
             "properties": {
-                "type": {
+                "description": {
                     "type": "string"
                 },
-                "description": {
+                "type": {
                     "type": "string"
                 }
             }
