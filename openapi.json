@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "version": "0.1",
-        "title": "Adobe CC Libraries APIs"
+        "title": "Adobe CC Libraries APIs Test"
     },
     "host": "cc-libraries.adobe.io",
     "basePath": "/",
